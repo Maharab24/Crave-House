@@ -2,7 +2,7 @@
   {
     "recipe_id": 1,
     "recipe_name": "Grilled Chicken Basil",
-    "image": "https://images.unsplash.com/photos/a-man-cooking-food-in-a-kitchen-wNQoaYCFcsI",
+    "image": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf",
     "description": "Juicy grilled chicken topped with fresh basil and spices.",
     "ingredients": ["550 g chicken", "200 g basil leaf", "2 garlic cloves"],
     "preparing_time": "25 min",
@@ -11,7 +11,7 @@
   {
     "recipe_id": 2,
     "recipe_name": "Classic Cheeseburger",
-    "image": "https://images.unsplash.com/photos/a-person-in-a-kitchen-preparing-food-on-a-stove-sWY9rwQhPck",
+    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b",
     "description": "Beef burger with melted cheese and sesame bun.",
     "ingredients": ["200 g beef patty", "1 burger bun", "2 slices cheddar cheese", "50 g lettuce", "1 tsp salt"],
     "preparing_time": "20 min",
@@ -20,7 +20,7 @@
   {
     "recipe_id": 3,
     "recipe_name": "Pasta Carbonara",
-    "image": "https://images.unsplash.com/photos/a-chef-cooking-in-a-kitchen-25DGbmQ_KPI",
+    "image": "https://images.unsplash.com/photo-1604910601540-0a7ae1dae5db",
     "description": "Creamy Italian pasta with bacon and parmesan.",
     "ingredients": ["250 g spaghetti", "100 g bacon", "2 eggs"],
     "preparing_time": "25 min",
@@ -29,7 +29,7 @@
   {
     "recipe_id": 4,
     "recipe_name": "Sushi Rolls",
-    "image": "https://images.unsplash.com/photos/a-couple-of-chefs-in-a-kitchen-preparing-food-yOMBZGPm_rU",
+    "image": "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56",
     "description": "Fresh homemade sushi with salmon and avocado.",
     "ingredients": ["200 g sushi rice", "100 g salmon", "1 avocado", "1 sheet nori"],
     "preparing_time": "40 min",
@@ -38,7 +38,7 @@
   {
     "recipe_id": 5,
     "recipe_name": "Avocado Toast",
-    "image": "https://images.unsplash.com/photos/a-chef-is-preparing-food-in-a-kitchen-Sx8G6WjyMHU",
+    "image": "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0",
     "description": "Crispy toast topped with mashed avocado and seasoning.",
     "ingredients": ["2 slices bread", "1 avocado"],
     "preparing_time": "10 min",
@@ -47,7 +47,7 @@
   {
     "recipe_id": 6,
     "recipe_name": "Thai Green Curry",
-    "image": "https://images.unsplash.com/photos/chef-cooking-on-kitchen-inside-restaurant-vC6naFGx120",
+    "image": "https://images.unsplash.com/photo-1630918214109-e82b4ceb2d5a",
     "description": "Spicy and rich Thai curry with coconut milk.",
     "ingredients": ["300 g chicken", "150 ml coconut milk", "100 g green curry paste", "100 g eggplant", "1 tsp salt"],
     "preparing_time": "30 min",
@@ -56,7 +56,7 @@
   {
     "recipe_id": 7,
     "recipe_name": "Egg Fried Rice",
-    "image": "https://images.unsplash.com/photos/a-delicious-detailed-food-dish-Nwai0Q0smfY",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246",
     "description": "Simple and quick rice dish with scrambled eggs and veggies.",
     "ingredients": ["200 g cooked rice", "2 eggs", "50 g carrots", "2 tbsp soy sauce", "1 tsp salt", "1 tbsp olive oil"],
     "preparing_time": "15 min",
@@ -65,7 +65,7 @@
   {
     "recipe_id": 8,
     "recipe_name": "Beef Steak",
-    "image": "https://images.unsplash.com/photos/500+Chef+Pictures",
+    "image": "https://images.unsplash.com/photo-1607116667981-ffb0b4b7b9d6",
     "description": "Juicy grilled beef steak with garlic butter.",
     "ingredients": ["300 g beef steak", "20 g garlic", "30 g butter"],
     "preparing_time": "20 min",
@@ -74,7 +74,7 @@
   {
     "recipe_id": 9,
     "recipe_name": "Fruit Parfait",
-    "image": "https://images.unsplash.com/photos/a-delicious-detailed-food-dish-Nwai0Q0smfY",
+    "image": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af",
     "description": "Layered yogurt, granola, and fresh fruits.",
     "ingredients": ["150 g yogurt", "50 g granola", "100 g mixed fruits"],
     "preparing_time": "10 min",
@@ -83,7 +83,7 @@
   {
     "recipe_id": 10,
     "recipe_name": "Chocolate Lava Cake",
-    "image": "https://images.unsplash.com/photos/a-delicious-detailed-food-dish-Nwai0Q0smfY",
+    "image": "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7",
     "description": "Warm chocolate cake with gooey melted center.",
     "ingredients": ["150 g dark chocolate", "2 eggs", "50 g flour", "50 g butter", "1 tsp sugar", "1 tsp vanilla extract"],
     "preparing_time": "25 min",
