@@ -11,7 +11,7 @@ function Carts({ onAddToCart, cartItems }) {
   useEffect(() => {
     const fetchCarts = async () => {
       try {
-        const res = await fetch('/public/restaurant_recipes.json');
+        const res = await fetch('restaurant_recipes.json');
         const data = await res.json();
         setCarts(data);
       } catch (err) {
