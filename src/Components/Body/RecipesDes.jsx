@@ -2,7 +2,7 @@ import React from 'react';
 
 function RecipesDes() {
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8 text-center ">
+    <div className="py-16 px-4 sm:px-6 lg:px-8 text-center mt-20">
       <div className="max-w-3xl mx-auto">
 
         <div className="relative">
