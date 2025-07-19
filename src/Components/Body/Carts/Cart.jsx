@@ -1,11 +1,23 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-function Cart({ recipe }) {
+function Cart({ recipe,onAddToCart  }) {
     const [imageError, setImageError] = useState(false);
     const [isAdded, setIsAdded] = useState(false);
     const [showIngredientsModal, setShowIngredientsModal] = useState(false);
+    const [isButtonDisabled, setIsButtonDisabled] = useState(false); // New state for button disable
     const fallbackImage = "https://images.unsplash.com/photo-1546069901-ba9599a7e63c";
+  const handleAddToCart = () => {
+        if (!isButtonDisabled) {
+            onAddToCart(recipe); // Call parent's handler
+            setIsAdded(true);
+            setIsButtonDisabled(true);
+
+            setTimeout(() => {
+                setIsAdded(false);
+            }, 2000);
+        }
+    };
 
     return (
         <>
@@ -101,43 +113,32 @@ function Cart({ recipe }) {
                     {/* Buttons at the bottom */}
                     <div className="mt-auto pt-6">
                         <div className="flex flex-col sm:flex-row sm:space-x-3">
-                            <motion.button
-                                className="flex-1 mb-2 sm:mb-0 bg-gradient-to-r from-purple-600 to-rose-500 text-white px-4 py-2 rounded-full text-sm font-medium"
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                onClick={() => {
-                                    setIsAdded(true);
-                                    setTimeout(() => setIsAdded(false), 2000);
-                                }}
+                            <motion.button o
+                                className={`flex-1 mb-2 sm:mb-0 px-4 py-2 rounded-full text-sm font-medium ${
+                                    isButtonDisabled
+                                        ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                                        : 'bg-gradient-to-r from-purple-600 to-rose-500 text-white'
+                                }`}
+                                whileHover={!isButtonDisabled ? { scale: 1.05 } : {}}
+                                whileTap={!isButtonDisabled ? { scale: 0.95 } : {}}
+                                onClick={handleAddToCart}
+                                disabled={isButtonDisabled}
                             >
-                                <AnimatePresence mode="wait">
-                                    {isAdded ? (
-                                        <motion.span
-                                            key="added"
-                                            initial={{ opacity: 0 }}
-                                            animate={{ opacity: 1 }}
-                                            exit={{ opacity: 0 }}
-                                            className="flex items-center justify-center"
-                                        >
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                                            </svg>
-                                            Added to Cart
-                                        </motion.span>
-                                    ) : (
-                                        <motion.span
-                                            key="add"
-                                            initial={{ opacity: 1 }}
-                                            animate={{ opacity: 1 }}
-                                            className="flex items-center justify-center"
-                                        >
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                            </svg>
-                                            Add to Cart
-                                        </motion.span>
-                                    )}
-                                </AnimatePresence>
+                                {isButtonDisabled ? (
+                                    <span className="flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                        </svg>
+                                        Added to Cart
+                                    </span>
+                                ) : (
+                                    <span className="flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg>
+                                        Add to Cart
+                                    </span>
+                                )}
                             </motion.button>
 
                             <button
