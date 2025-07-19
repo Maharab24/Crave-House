@@ -65,6 +65,8 @@ function SideBar({ cartItems }) {
         </div>
       </div>
 
+      <hr />
+
       {/* Currently Cooking Section */}
       <div>
         <h2 className="text-2xl font-bold mb-4">
