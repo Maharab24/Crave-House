@@ -1,6 +1,7 @@
 // Footer.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import logo from '../../assets/logo.png';
 
 const Footer = () => {
   return (
@@ -10,13 +11,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <div className="bg-amber-500 w-10 h-10 rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                </svg>
-              </div>
-              <h2 className="ml-3 text-2xl font-bold bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">Crave House</h2>
-            </div>
+      <img src={logo} alt="Crave House Logo" className="w-10 h-10 rounded-lg" />
+      <h2 className="ml-3 text-2xl font-bold bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
+        Crave House
+      </h2>
+    </div>
             <p className="text-gray-300 max-w-xs">
               Discover delicious recipes from around the world. Cook like a pro with our step-by-step guides and cooking tips.
             </p>

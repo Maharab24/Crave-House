@@ -2,9 +2,9 @@ import React from 'react';
 
 function RecipesDes() {
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8 text-center mt-20">
+    <div className="py-16 px-4 sm:px-6 lg:px-8 text-center ">
       <div className="max-w-3xl mx-auto">
-        
+
         <div className="relative">
           <div className="absolute -top-4 -left-4 w-16 h-16 bg-amber-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
           <div className="absolute -top-4 -right-4 w-16 h-16 bg-emerald-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
