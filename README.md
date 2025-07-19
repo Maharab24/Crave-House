@@ -2,6 +2,13 @@
 
 A **beautiful and responsive restaurant landing page** built with **ReactJS**, **Tailwind CSS**, **Vite**, and a **Custom API**. This project showcases a modern and interactive web experience for users to explore delicious dishes, view ingredients, and manage their cart seamlessly.
 
+---
+## Live Page link 
+
+http://crave-house.surge.sh/
+
+---
+
 ##  Features
 
 -  **Stunning and modern UI**
